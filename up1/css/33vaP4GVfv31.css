@@ -1,25 +1,25 @@
 :root {
 
     /* nome da empresa */
-    --marca: "Pernambucanas";
-    
-    
+    --marca: "BV FINANCEIRA";
+
+
     /* nav */
-    --nav-background:#fff;
+    --nav-background: #fff;
 
     /* body */
     --background-body: #f3f3f3;
 
 
     /* FAQ */
-    --faq-selecionado:#FFD900;
-    --faq-selecionado-fonte:#000;
+    --faq-selecionado: #FFD900;
+    --faq-selecionado-fonte: #000;
 
 
     /*Footer*/
     --footer-background: #fff;
     --footer-font-color: #000;
-    
+
     /* fonte titulo */
     --h2: #000;
 
@@ -37,13 +37,13 @@ body {
     /*color: var(--primary);*/
 }
 
-h2{
+h2 {
     color: var(--h2);
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-nav{
+nav {
     background-color: var(--nav-background);
     padding: 10px;
     display: flex;
@@ -70,6 +70,7 @@ nav{
     align-items: center;
     padding: 8px 0;
 }
+
 .logo-container img {
     max-width: 200px;
     height: auto;
@@ -113,6 +114,7 @@ nav{
 .timeline-part.done {
     color: var(--timeline-done);
 }
+
 .timeline-part.done .dot {
     background: var(--timeline-done);
 }
@@ -120,6 +122,7 @@ nav{
 .timeline-part.current {
     color: var(--red);
 }
+
 .timeline-part.current .dot {
     animation: pulse 1s infinite;
     background: var(--red);
@@ -128,6 +131,7 @@ nav{
 .timeline-part.pending {
     color: rgba(0, 0, 0, 0.3);
 }
+
 .timeline-part.pending .dot {
     background: var(--timeline-bar);
 }
@@ -150,9 +154,17 @@ nav{
 
 /* Animation */
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--red); }
-    70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+    0% {
+        box-shadow: 0 0 0 0 var(--red);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
 }
 
 
@@ -162,36 +174,42 @@ nav{
     padding: 1.25rem;
     background: #f8f9fa;
     border: 1px solid #e2e3e5;
-  }
-  .accordion-button:not(.collapsed) {
+}
+
+.accordion-button:not(.collapsed) {
     background: #fff;
     color: var(--faq-selecionado-fonte);
-  }
-  .accordion-body {
+}
+
+.accordion-body {
     padding: 1.25rem;
     border-bottom: 1px solid #e2e3e5;
-  }
-  .accordion-button:focus {
+}
+
+.accordion-button:focus {
     box-shadow: none;
-  }
-  .accordion-icon {
+}
+
+.accordion-icon {
     margin-right: 0.75rem;
     transition: transform 0.3s;
-  }
-  .accordion-button:not(.collapsed) .accordion-icon {
+}
+
+.accordion-button:not(.collapsed) .accordion-icon {
     transform: rotate(180deg);
-  }
+}
 
 
-  /* Player de vídeo */
-  .video-container {
+/* Player de vídeo */
+.video-container {
     margin-bottom: 1rem;
     border-radius: 10px;
-  }
-  #videoOverlay {
+}
+
+#videoOverlay {
     z-index: 10;
     transition: opacity 0.3s;
-  }
+}
 
 
 /* LOADING */
@@ -233,20 +251,27 @@ nav{
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 .status-error {
     color: #ff0000;
     font-weight: bold;
     margin-top: 15px;
 }
+
 .message-container {
     min-height: 60px;
     text-align: center;
 }
 
-/* Borda pontilhada do card */ 
+/* Borda pontilhada do card */
 .border-dashed {
     border-style: dashed !important;
     border-width: 2px !important;
